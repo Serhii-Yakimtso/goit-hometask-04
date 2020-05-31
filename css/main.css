@@ -20,11 +20,22 @@
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  height: 600px;
 
   text-align: center;
 
   color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/index-hero-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: rgba(47, 48, 58, 0.8); */
 }
 
 /* убираем отступы в заголовке + задаем шрифт */
@@ -227,10 +238,13 @@
 
 /* задаем ширину каждой карточке члена команды */
 /* 4 карточки с тремя зазорами по 30px */
+/* задаем тень карточке */
 .team-card {
   width: calc((100%-90px) / 4);
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
 }
 
@@ -415,6 +429,12 @@
   overflow: hidden;
 
   width: 370px;
+}
+
+.card-area:focus,
+.card-area:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 /* задаем внутрение утступы текстового контента карточки списка работ */
