@@ -96,7 +96,7 @@
 /* задаем отступы под изображением в карточке */
 /* задаем радиус рамке */
 /* задаем задний фон */
-.features .img {
+.features .icon-box {
   display: block;
   width: 270px;
   height: 120px;
@@ -110,9 +110,9 @@
   background: var(--secondary-background-color);
 }
 
-.features .img:hover,
-.features .img:focus {
-  background: var(--main-accent-color);
+.features .icon {
+  width: 70px;
+  height: 70px;
 }
 
 /* обнуляем верхний и нижний отсутп заголовка и текста в карточке */
@@ -197,7 +197,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-
+  background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
 }
 
@@ -300,15 +300,28 @@
   padding-bottom: 24px;
 }
 
-/* задаем цвет списку соцсетей в карточке члена команды */
 .team .link {
-  color: #94969e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* задаем фокус списку соцсетей в карточке члена команды */
 .team .link:hover,
 .team .link:focus {
-  color: var(--main-accent-color);
+  color: #ffffff;
+
+  background-color: var(--main-accent-color);
+  border-radius: 50%;
 }
 
 /* секция Постоянные клиенты */

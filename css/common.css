@@ -73,10 +73,10 @@ img {
 /* помощь для верстки */
 /* при финале скрыть */
 /* видимость контейнеров */
-.container,
+/* .container,
 .section {
-  /* outline: 1px solid tomato; */
-}
+  outline: 1px solid tomato;
+} */
 
 .card-upper-text {
   position: absolute;
@@ -183,6 +183,7 @@ section.clients {
 .link:hover,
 .link:focus {
   color: var(--main-accent-color);
+  fill: var(--main-accent-color);
 }
 
 /* задаем флекс контактам */
@@ -190,6 +191,7 @@ section.clients {
 /* прижимаем контакты к правой границе header */
 .contacts {
   display: flex;
+  /* align-items: center; */
 
   margin-top: 0;
   margin-bottom: 0;
@@ -205,6 +207,22 @@ section.clients {
 /* задаем цвет шрифта элементам контактов */
 .mail-tel {
   color: var(--primary-text-color);
+}
+
+.contacts .mail-tel {
+  display: flex;
+  align-items: center;
+}
+.icon-mail {
+  width: 16px;
+  margin-right: 10px;
+}
+.icon-phone {
+  width: 10px;
+  margin-right: 10px;
+}
+.icon-contacts {
+  fill: currentColor;
 }
 
 /* footer */
