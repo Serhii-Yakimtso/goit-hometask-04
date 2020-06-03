@@ -309,7 +309,7 @@
   color: #afb1b8;
 }
 
-.icon-social {
+.team .icon-social {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -345,7 +345,7 @@
 
 /* задаем флекс иконкам клиентов для центрирования */
 /* задаем размеры блоку иконки и рамку */
-.clients li {
+/* .clients li {
   display: flex;
   width: 170px;
   height: 90px;
@@ -353,11 +353,58 @@
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-}
+  color: #afb1b8;
+} */
 
 /* задаем правый отступ между иконками списка клиентов */
 .clients li:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients a {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.clients a:hover,
+.clients a:focus {
+  border-color: var(--main-accent-color);
+  color: var(--main-accent-color);
+}
+
+.icon-client {
+  fill: currentColor;
+}
+
+.client-logo-1 {
+  width: 42.27px;
+  /* height: 49.23px; */
+}
+.client-logo-2 {
+  width: 40px;
+  /* height: 52px; */
+}
+.client-logo-3 {
+  width: 41px;
+  /* height: 42.6px; */
+}
+.client-logo-4 {
+  width: 79.66px;
+  /* height: 42.02px; */
+}
+.client-logo-5 {
+  width: 59px;
+  /* height: 47px; */
+}
+.client-logo-6 {
+  width: 88.48px;
+  /* height: 45.44px; */
 }
 
 /* Портфолио */
