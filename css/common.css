@@ -129,6 +129,7 @@ section.clients {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 /* задаем правый отступ от логотипа */
@@ -184,6 +185,7 @@ section.clients {
 .link:focus {
   color: var(--main-accent-color);
   fill: var(--main-accent-color);
+  cursor: pointer;
 }
 
 /* задаем флекс контактам */
@@ -215,10 +217,12 @@ section.clients {
 }
 .icon-mail {
   width: 16px;
+  height: 11.2px;
   margin-right: 10px;
 }
 .icon-phone {
   width: 10px;
+  height: 14.94px;
   margin-right: 10px;
 }
 .icon-contacts {
@@ -244,6 +248,7 @@ section.clients {
 .footer .logo {
   display: block;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 /* задаем шрифты адресу */
@@ -310,6 +315,7 @@ section.clients {
 .footer .link:hover,
 .footer .link:focus {
   background-color: var(--main-accent-color);
+  cursor: pointer;
 }
 
 /* убираем верхний и нижний зазоры кнопки "подписатся" */
@@ -337,6 +343,7 @@ section.clients {
 
   color: currentColor;
   background-color: var(--main-accent-color);
+  cursor: pointer;
 }
 
 .icon-send {
